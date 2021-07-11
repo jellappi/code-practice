@@ -10,6 +10,7 @@ for j, a in enumerate(array):
     conn = False
     
     for i in range(len(tap)):
+        
         if tap[i] == 0 or tap[i] == a:
             tap[i] = a
             conn = True
@@ -25,6 +26,7 @@ for j, a in enumerate(array):
             
     if conn:
         pass
+    
     else:
         max_idx = tap_i.index(max(tap_i))
         tap[max_idx] = a
